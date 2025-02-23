@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Моя страница</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+<body style="background-color: rgb(32, 30, 30);text-align: center;font-family:Montserrat">
+    <header style="color:rgb(32, 30, 30);background-color:azure;display: flex;justify-content: center;gap: 100px;">
+        <img src="./photo_2025-02-11_13-48-38.jpg" style="max-width: 10%; height: auto;" alt="Изображение">
+        <h2  style="vertical-align:top;"> Петушков Владислав</h2>
+        <nav >
+            <ul style="vertical-align: top;">
+                <li>+375 29 531 5741</li>
+                <li><a href="https://t.me/redouter">Telegram</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main style="color:azure;margin-top: 100px;margin-bottom: 100px;">
+        <div style="display: flex; justify-content: center;">
+            <div style="border:solid;border-color: aliceblue;">
+                <h1 >Обо мне</h1>
+                <p style="font-size: large;text-align: justify;padding: 20px;">Я люблю искать нестандартные решения, смотреть на привычные вещи под новым углом и находить неожиданные пути их улучшения. 
+                Мне нравится изучать что-то новое, углубляться в детали и применять знания на практике. 
+                В каждом опыте я стараюсь увидеть урок, который поможет мне расти и развиваться.
+                </p>
+                <h2>Опыт работы</h2>
+                <p>Практика в области компьютерного зрения.CV</p>
+                <h2>Английский язык:B2</h2>        
+            </div>
+            <div style="display: inline-block;">
+                <h2>Навыки</h2>
+                <div style="font-size: large;">
+                    <ol style="text-align: justify;">
+                        <li>C#</li>
+                        <li>Python</li>
+                        <li>Git</li>
+                        <li>Методологии описания бизнес-процессов(IDEF0,EPC)</li>
+                        <li>ArchiMate</li>
+                    </ol>
+                </div>
+                <h2>Пример кода</h2>
+                <pre><code>
+                    cap = cv2.VideoCapture(0)
+                    with mp_holistic.Holistic(static_image_mode=False, min_detection_confidence=0.5, min_tracking_confidence=0.5) as holistic:
+                        while cap.isOpened():
+                            success, image = cap.read()
+                            if not success:
+                                print("Не удается считать видео с камеры")
+                                continue
+                    
+                            image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+                            results = holistic.process(image_rgb)
+                    
+                            keypoints = {}
+                            if results.pose_landmarks:
+                                keypoints['pose'] = [
+                                    {'x': lm.x, 'y': lm.y, 'z': lm.z}
+                                    for lm in results.pose_landmarks.landmark
+                </code></pre>
+            </div>
+        </div>
+    </main>
+    <footer style="background-color: azure;color: #000;display: flex;justify-content: center;gap: 100px;">
+        &copy; 2025 Петушков Владислав. Все права защищены.
+        <nav style="display: inline-block;">
+            <ul style="display: inline-block;vertical-align: top;">
+                <li>+375 29 531 5741</li>
+                <li><a href="https://t.me/redouter">Telegram</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
