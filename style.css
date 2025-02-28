@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+}
+
+body{
+    font-family: Roboto;
+    color: rgba(116, 116, 116, 1);
+    background-color:rgba(245, 245, 245, 1);
+    font-size: 1.8rem;
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 7.4rem;
+}
+.header{
+    margin-top: 4.1rem;
+    margin-bottom: 1.3rem;
+}
+.email
+{
+    color:black;
+}
+nav
+{
+    margin-right: 3rem;
+}
+.nav{
+    margin-top: 3.1rem;
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+}
+ul a {
+    text-decoration: none; 
+    color:black;
+    font-weight: bold;
+}
+main
+{
+    margin-top: 11.5rem;
+}
+.man
+{
+    width: 51.4%;
+    height: auto;
+    margin-left: 0.3rem;
+}
+.moto
+{
+    display: flex;
+}
+.x1{
+    font-size: 6rem;
+    margin-right: -1rem;
+    padding-top: 1000px;
+
+}
+.x2{
+    font-size: 4.4rem;
+    font-weight: 200;
+}
+.bold
+{
+    font-size: 6rem;
+    font-weight: bold;
+}
+.regular
+{
+    font-size: 4.9rem;
+    font-weight: 200;
+    letter-spacing: 0.1rem;
+}
+h1
+{
+    color:black;
+    margin-top: 10.6rem;
+    margin-left:5.9rem;
+    line-height: 5.6rem;
+    letter-spacing: 0%;
+}
+.roby
+{
+    display: flex;
+    justify-content: center;
+}
+.name
+{
+    width: 28.6%;
+    height: auto;
+    position: absolute;
+    top: 6.1rem;
+}
+.circle_container
+{
+    display:flex;
+    justify-content: center;
+}
+.circle {
+    width: 14rem; 
+    height: 14rem;
+    background-color: black; 
+    color: white;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 50%; 
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: regular;
+    position: absolute;
+    margin-top: -17rem;
+    margin-left: 30.4rem;
+    line-height: 2rem;
+    letter-spacing: 0.1rem;
+}
