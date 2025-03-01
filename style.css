@@ -70,6 +70,7 @@ main
 {
     font-size: 6rem;
     font-weight: bold;
+    letter-spacing: 0%;
 }
 .regular
 {
@@ -148,4 +149,66 @@ h1
     height: auto;
     margin-left: 6.2rem;
 }
-
+.section1
+{
+    margin-top: 12.4rem;
+    display: flex;
+    justify-content: space-between;
+}
+.agency
+{
+    margin-left: 12rem;
+}
+h2
+{
+    line-height: 6rem;
+    color: black;
+}
+.regular2
+{
+    font-size: 5.4rem;
+    font-weight: 200;
+    letter-spacing: 0.1rem;
+}
+.agency p{
+    width: 379px;
+    height: auto;
+    font-size: 1.9rem;
+    letter-spacing: 0%;
+    line-height: 2.4rem;
+    margin-top: 2.9rem;
+}
+.awwards
+{
+    width: 39rem;
+    margin-top: 21.5rem;
+    margin-right: 11.3rem;
+}
+.awwards-title
+{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.awwards-title h4
+{
+    color:black;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1.9rem;
+}
+.awwards ul
+{
+    font-size: 1.9rem;
+    list-style: none;
+    margin-top: 1.5rem;
+    margin-bottom: 7.5rem;
+}
+.awwards li
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    line-height: 2.4rem;
+    letter-spacing: 0%;
+}
