@@ -71,6 +71,7 @@ main
     font-size: 6rem;
     font-weight: bold;
     letter-spacing: 0%;
+    text-transform:uppercase;
 }
 .regular
 {
@@ -183,6 +184,7 @@ h2
     width: 39rem;
     margin-top: 21.5rem;
     margin-right: 11.3rem;
+    margin-bottom: 8.4rem;
 }
 .awwards-title
 {
@@ -211,4 +213,53 @@ h2
     padding: 0.5rem 0;
     line-height: 2.4rem;
     letter-spacing: 0%;
+}
+.work h2
+{
+    text-align: center;
+    margin-left: 1.2rem;
+}
+.regular3
+{
+    font-size: 51px;
+    font-weight: 200;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin-left:0.7rem;
+}
+.work_images
+{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+}
+.work_images img
+{
+    width: 32.6vw;
+    height: auto;
+}
+.left_part
+{
+    margin-top: 1.2rem;
+    text-align: center;
+}
+.right_part
+{
+    margin-top: 11.2rem;
+    text-align: center;
+}
+.work_images h4
+{
+    font-size: 2.2rem;
+    line-height: 3rem;
+    font-weight: bold;
+    color:black;
+    text-transform: uppercase;
+    margin-top: 3.7rem;
+}
+.work_images p
+{
+    margin-top: 0.2rem;
+    margin-bottom: 2.1rem;
 }
