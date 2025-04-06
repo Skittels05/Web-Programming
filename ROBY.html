@@ -12,36 +12,46 @@
     <header>
         <div>
             <p class="header">A creative agency based in Helsinki.</p>
-            <p class = "email">hello@robi.com</p>
+            <p class="email">hello@robi.com</p>
         </div>
-        <nav>
+        
+        <input type="checkbox" id="burger-toggle" class="burger-toggle">
+        <label for="burger-toggle" class="burger-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        
+        <nav class="nav-container">
             <ul class="nav">
                 <li><a href="a">Home</a></li>
                 <li><a href="a">About</a></li>
                 <li><a href="a">News</a></li>
                 <li><a href="a">Contact</a></li>
-                <li><a href="a">Cart</a></li>
+                <li><a href="a">Cart (0)</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main> 
         <div class="roby">
             <img class="name" src="./assets/roby.png" alt="roby">
         </div>
         <div class="moto">
             <img class="man" src="./assets/man.png" alt="Мужик">
-            <h1>
-                <span class="x1">“</span>
-                <span class="bold">WE BELIEVE THAT<br></span>
-                <span class="regular">THE POWER OF DESIGN<br></span>
-                <span class="bold">HELPS <br>BUSINESSES</span>
-                <span class="x2">.”</span>
-            </h1>
+            <div>
+                <h1>
+                    <span class="x1">“</span>
+                    <span class="bold">WE BELIEVE THAT<br></span>
+                    <span class="regular">THE POWER OF DESIGN<br></span>
+                    <span class="bold">HELPS <br>BUSINESSES</span>
+                    <span class="x2">.”</span>
+                </h1>
+                <div class="circle_container">
+                    <button class="circle">WORK<br>WITH US</button>
+                </div>
+            </div>
         </div>
-        <div class="circle_container">
-            <button class="circle">WORK<br>WITH US</button>
-        </div>
-        <div class="partners">
+         <div class="partners"> 
             <p>
                 <span >We partner with</span>
                 <span class="style1">forward-thinking</span>
@@ -51,7 +61,7 @@
                 <img class="partners_icons" src="./assets/partners.png" alt="partners">
             </div>
         </div>
-        <section class="section1">
+        <section class="section1"> 
             <div class="agency">
                 <h2>
                     <span class="bold">THE PERFECT<br></span>
@@ -93,7 +103,7 @@
                 </ul>
             </div>
         </section>
-        <section class="work">
+        <section class="work"> 
             <h2>
                 <span class="bold">selected</span>
                 <span class="regular3">work</span>
@@ -123,7 +133,7 @@
                 </div>
             </div>
         </section>
-        <section class="web">
+        <section class="web"> 
             <div>
                 <h2>
                     <span class="bold2">Improve</span>
@@ -142,9 +152,10 @@
                 </h4>
                 <p class="regular9">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
             </div>
-            <img src="./assets/website.png" alt="Website">
+            <img src="./assets/website.png" alt="Website" class="pc">
+            <img src="./assets/phone.png" alt="Phone" class="phone">
         </section>
-        <section>
+        <section class="think_section"> 
             <h2 class="think">
                 <span class="bold">what</span>
                 <span class="regular6">they</span>
@@ -178,7 +189,7 @@
                 <div class="rectangle"></div>
             </div>
         </section>
-        <section class="team_skills">
+        <section class="team_skills"> 
             <div class="skills-block">
                 <h2>
                     <span>our</span>
@@ -207,7 +218,7 @@
             </div>
             <img src="./assets/team.png" alt="team">
         </section>
-        <section class="facts_section">
+        <section class="facts_section"> 
             <h2>
                 <span class="bold3">fun</span>
                 <span class="regular8">facts</span>
@@ -244,7 +255,7 @@
                 </div>
             </div>
         </section>
-        <section class="blog_section">
+        <section class="blog_section"> 
             <div class="blog_head">
                 <h2>
                     <span class="bold">our</span>
@@ -280,7 +291,7 @@
                     <p>March 9, 2021</p>
                 </div>
             </div>
-        </section>
+        </section> 
         <section class="contact">
             <div>
                 <h2>
@@ -291,8 +302,8 @@
             </div>
             <button class="circle3">view on <br>designer</button>
         </section>
-    </main>
-    <footer>
+    </main> 
+    <footer> 
         <div class="social_logo">
             <img src="./assets/roby.png" alt="roby">
             <div class="social-icons">
@@ -326,11 +337,13 @@
             </div>
             <div class="contactf">
                 <h5>contact</h5>
-                <p>P: 3740 213 301</p>
-                <p>E: contact@robi.com</p>
+                <p>
+                    <span>P: 3740 213 301 <br></span>
+                    <span>E: contact@robi.com</span>
+                </p>
             </div>
         </div>
         <p class="copyright">&copy; This is a Deni Bozo template powered by Webflow.</p>
-    </footer>
+    </footer> 
 </body>
 </html>

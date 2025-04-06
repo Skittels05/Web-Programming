@@ -7,6 +7,10 @@ html {
     font-size: 10px;
 }
 
+.phone
+{
+    display: none;
+}
 body{
     font-family: Roboto;
     color: rgba(116, 116, 116, 1);
@@ -27,10 +31,6 @@ header
 {
     color:black;
 }
-nav
-{
-    margin-right: 3rem;
-}
 .nav{
     margin-top: 3.1rem;
     list-style: none;
@@ -42,15 +42,36 @@ ul a {
     color:black;
     font-weight: bold;
 }
+.burger-toggle {
+    display: none;
+}
+
+.burger-btn {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 3.1rem;
+}
+
+.burger-btn span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+}
 main
 {
     margin-top: 11.5rem;
 }
+
 .man
 {
     width: 51.4%;
-    height: auto;
+    height: 60rem;
+    overflow: hidden; 
     margin-left: 0.3rem;
+    object-fit: cover;
 }
 .moto
 {
@@ -59,7 +80,7 @@ main
 .x1{
     font-size: 6rem;
     margin-right: -1rem;
-    padding-top: 1000px;
+    padding-top: 100rem;
 
 }
 .x2{
@@ -94,7 +115,7 @@ h1
 }
 .name
 {
-    width: 28.6%;
+    max-width: 28.6%;
     height: auto;
     position: absolute;
     top: 6.1rem;
@@ -102,7 +123,6 @@ h1
 .circle_container
 {
     display:flex;
-    justify-content: center;
 }
 .circle {
     width: 14rem; 
@@ -116,11 +136,10 @@ h1
     text-align: center;
     font-size: 1.4rem;
     font-weight: regular;
-    position: absolute;
-    margin-top: -17rem;
-    margin-left: 30.4rem;
     line-height: 2rem;
     letter-spacing: 0.1rem;
+    margin-top: 8rem;
+    margin-left: 6rem;
 }
 .partners
 {
@@ -146,7 +165,7 @@ h1
 }
 .partners_icons
 {
-    width: 102.3rem;
+    max-width: 102.3rem;
     height: auto;
     margin-left: 6.2rem;
 }
@@ -218,7 +237,7 @@ h2
 {
     text-align: center;
     margin-left: 1.2rem;
-    margin-top:-0.4rem; 
+    margin-top:-0.2rem; 
 }
 .regular3
 {
@@ -270,7 +289,7 @@ h2
     justify-content: space-between;
     margin-top: 9rem;
 }
-.web img
+.pc
 {
     width: 48vw;
     height: auto;
@@ -325,10 +344,16 @@ h2
     font-size: 1.9rem;
     line-height: 2.47rem;
 }
+.think_section
+{
+    width: 100vw;
+    object-fit: cover;
+    overflow: hidden;
+}
 .think
 {
     text-align: center;
-    margin-top: 15.3rem;
+    margin-top: 15.5rem;
     
 }
 .regular6
@@ -338,14 +363,17 @@ h2
     line-height: 7.2rem;
     font-weight: 300;
     margin-left :0.7rem;
-    margin-right: 0.6rem;
+    margin-right: 0.2rem;
+    position: relative;
+    top: -0.5rem;
+    letter-spacing: 1px;
 }
 .cards
 {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin-top: 10.5rem;
+    margin-top: 10.6rem;
 }
 .cards div
 {
@@ -430,18 +458,20 @@ h2
 {
     display: flex;
     margin-top: 10.5rem;
+
 }
 .skills-block
 {
-    width: 50vw;
-    height: 60rem;
+    flex: 1;
+    
     background-color:rgba(2, 10, 12, 1);
     text-align: center;
 }
 .team_skills img
 {
     width: 50vw;
-    height: min-content;
+    height: auto;
+
 }
 .team_skills h2
 {
@@ -507,6 +537,7 @@ h2
 {
     margin-top: 11.5rem;
     text-align: center;
+
 }
 .facts_section h2
 {
@@ -530,13 +561,15 @@ h2
     font-weight: normal;
     letter-spacing: 1px;
 }
-.facts
-{
+.facts {
     display: grid;
-    grid-template-columns: repeat(4, 26rem);
-    gap: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); 
+    gap: 3rem; 
     text-align: center;
-    margin: 0 12rem;
+    margin: 6rem 20% 0; 
+    max-width: 120rem; 
+    margin-left: auto;
+    margin-right: auto;
 }
 .facts img
 {
@@ -616,7 +649,8 @@ h2
     display: flex;
     justify-content: center;
     gap:4rem;
-    margin-top: 6rem;
+    margin-top: 5.5rem;
+    flex-wrap: wrap;
 }
 .blog_section img
 {
@@ -630,7 +664,7 @@ h2
 }
 .post_buttons
 {
-    margin-top: 4rem;
+    margin-top: 4.5rem;
     width:fit-content;
     padding: 0 1.5rem;
     height: 34px;
@@ -770,6 +804,8 @@ footer h5
 .sitemapf
 {
     margin-top: 6.2rem;
+    position: relative;
+    right: 6rem;
 }
 .sitemapf ul
 {
@@ -784,6 +820,11 @@ footer h5
     margin-top: 3.8rem;
     position: relative;
     right: 2rem;
+}
+.contactf p
+{
+    margin-top: 1rem;
+    line-height: 30px;
 }
 .map
 {
@@ -805,4 +846,93 @@ footer h5
     margin-top: 3rem;
     font-size: 1.7rem;
 }
+@media (max-width: 768px) {
+    .burger-btn {
+        display: block;
+    }
+    
+    .nav-container {
+        display: none;
+        width: 100%;
+    }
+    
+    .nav {
+        flex-direction: column;
+        margin-top: 1rem;
+        gap: 1rem;
+        padding-bottom: 2rem;
+    }
+    
+    .burger-toggle:checked ~ .nav-container {
+        display: block;
+    }
+    .name
+    {
+        display: none;
+    }
+    .man
+    {
+        display: none;
+    }
+    .moto
+    {
+        justify-content: center;
+        text-align: center;
+        background-image:url(./assets/man2.png);
+        margin-top: -8rem;
+    }
+    .moto h1
+    {
+        color: aliceblue;
+        margin-top: 58.5rem;
+    }
+    .moto button
+    {
+        color:black;
+        background-color:aliceblue;
+        margin: 0 auto;
+        border:none;
+        margin-bottom: 2rem;
+    }
+    .partners_icons
+    {
+        width: 75rem;
+        margin-right: 5rem;
+    }
+    .section1
+    {
+        gap: 3rem;
+    }
+    .pc
+    {
+        display: none;
+    }
+    .phone
+    {
+        display: block;
+        width: 30rem;
+        height: auto;
+    }
+    .web
+    {   
+        margin: 0 3.5rem;
+        margin-top: 10rem;
+    }
+    .web div
+    {
+        margin-left: 0rem;
+    }
+    .team_skills img
+    {
+        display: none;
+    }
+    .team_skills div
+    {
+        margin: 0 auto;
+    }
+    .sitemapf
+    {
+        display: none;
+    }
 
+}
