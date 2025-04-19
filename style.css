@@ -64,7 +64,6 @@ main
 {
     margin-top: 11.5rem;
 }
-
 .man
 {
     width: 51.4%;
@@ -289,11 +288,13 @@ h2
     display: flex;
     justify-content: space-between;
     margin-top: 9rem;
+    overflow: hidden;
 }
 .pc
 {
-    width: 48vw;
-    height: auto;
+    width: 54vw;
+    height: fit-content;
+    margin-top: 13rem;
 }
 .web div
 {
@@ -354,7 +355,7 @@ h2
 .think
 {
     text-align: center;
-    margin-top: 15.5rem;
+    margin-top: 3rem;
     
 }
 .regular6
@@ -461,6 +462,7 @@ h2
     display: flex;
     margin-top: 10.5rem;
 
+
 }
 .skills-block
 {
@@ -471,7 +473,7 @@ h2
 .team_skills img
 {
     width: 50vw;
-    height: auto;
+    height: 60rem;
 
 }
 .team_skills h2
@@ -782,6 +784,10 @@ footer
 .social-icons a:hover {
     opacity: 50%;
 }
+.phone_div
+{
+    display:none;
+}
 .prelast
 {
     display: flex;
@@ -857,7 +863,10 @@ header img
     .burger-btn {
         display: block;
     }
-    
+    .think
+    {
+        margin-top: 15rem;
+    }
     .nav-container {
         display: none;
         width: 100%;
@@ -880,6 +889,7 @@ header img
     .man
     {
         display: none;
+
     }
     .moto
     {
@@ -903,6 +913,7 @@ header img
         border:none;
         margin-bottom: 2rem;
     }
+    
     .partners_icons
     {
         width: 100vw;
@@ -941,6 +952,7 @@ header img
     }
     .phone_div
     {
+        display: block;
         overflow: hidden;
     }
     .phone
