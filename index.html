@@ -10,51 +10,53 @@
 </head>
 <body>
     <header>
-        <img src="./assets/roby.png" alt="roby_header">
-        <div>
+        <img src="./assets/roby.png" alt="roby_header" class="logo-pulse">
+        <div class="anim1">
             <p class="header">A creative agency based in Helsinki.</p>
             <p class="email">hello@robi.com</p>
         </div>
         
-        <input type="checkbox" id="burger-toggle" class="burger-toggle">
-        <label for="burger-toggle" class="burger-btn">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
+        <div class="burger-wrapper">
+            <input type="checkbox" id="burger-toggle" class="burger-toggle">
+            <label for="burger-toggle" class="burger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
         
-        <nav class="nav-container">
-            <ul class="nav">
-                <li><a href="a">Home</a></li>
-                <li><a href="a">About</a></li>
-                <li><a href="a">News</a></li>
-                <li><a href="a">Contact</a></li>
-                <li><a href="a">Cart (0)</a></li>
-            </ul>
-        </nav>
+            <nav class="nav-container">
+                <ul class="nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Cart (0)</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main> 
         <div class="roby">
-            <img class="name" src="./assets/roby.png" alt="roby">
+            <img class="name floating" src="./assets/roby.png" alt="roby">
         </div>
         <div class="moto">
-            <img class="man" src="./assets/man.png" alt="Мужик">
+            <img class="man slide-in" src="./assets/man.png" alt="Мужик">
             <div>
-                <h1>
-                    <span class="x1">“</span>
+                <h1 class="text-fade">
+                    <span class="x1">"</span>
                     <span class="bold">WE BELIEVE THAT<br></span>
                     <span class="regular">THE POWER OF DESIGN<br></span>
                     <span class="bold">HELPS <br>BUSINESSES</span>
-                    <span class="x2">.”</span>
+                    <span class="x2">"</span>
                 </h1>
                 <div class="circle_container">
-                    <button class="circle">WORK<br>WITH US</button>
+                    <button class="circle rotate-scale">WORK<br>WITH US</button>
                 </div>
             </div>
         </div>
-         <div class="partners"> 
+         <div class="partners bounce-in"> 
             <p>
-                <span >We partner with</span>
+                <span>We partner with</span>
                 <span class="style1">forward-thinking</span>
                 <span>startups.</span>
             </p>
@@ -64,7 +66,7 @@
         </div>
         <section class="section1"> 
             <div class="agency">
-                <h2>
+                <h2 class="wave-text">
                     <span class="bold">THE PERFECT<br></span>
                     <span class="regular2">AGENCY FOR YOUR BRAND</span>
                 </h2>
@@ -82,7 +84,7 @@
                     </h4>
                     <h4>14</h4>
                 </div>
-                <hr>
+                <hr class="grow-line">
                 <ul>
                     <li><span>Site of the Day</span> <span>3</span></li>
                     <li><span>Developer Award</span> <span>1</span></li>
@@ -95,7 +97,7 @@
                     </h4>
                     <h4>34</h4>
                 </div>
-                <hr>
+                <hr class="grow-line">
                 <ul>
                     <li><span>UX Design Award</span> <span>10</span></li>
                     <li><span>UI Design Award</span> <span>4</span></li>
@@ -111,24 +113,24 @@
             </h2>
             <div class="work_images">
                 <div class="left_part">
-                    <img src="./assets/bike.png" alt="bike">
+                    <img src="./assets/bike.png" alt="bike" class="zoom-hover">
                     <h4>Conference</h4>
                     <p>Art Direction, Design</p>
-                    <img src="./assets/ivor.png" alt="ivor">
+                    <img src="./assets/ivor.png" alt="ivor" class="zoom-hover">
                     <h4>Ivor Application</h4>
                     <p>User Interface</p>
-                    <img src="./assets/moon.png" alt="moon">
+                    <img src="./assets/moon.png" alt="moon" class="zoom-hover">
                     <h4>Flying to the moon</h4>
                     <p>User Experiences</p>
                 </div>
                 <div class="right_part">
-                    <img src="./assets/bottle.png" alt="bottle">
+                    <img src="./assets/bottle.png" alt="bottle" class="zoom-hover">
                     <h4>Magazine</h4>
                     <p>Logo, User Interface</p>
-                    <img src="./assets/white.png" alt="white">
+                    <img src="./assets/white.png" alt="white" class="zoom-hover">
                     <h4>Black Apple Watch</h4>
                     <p>Logo, User Interface</p>
-                    <img src="./assets/black.png" alt="black">
+                    <img src="./assets/black.png" alt="black" class="zoom-hover">
                     <h4>Dharma Webfont</h4>
                     <p>Branding, Web Design</p>
                 </div>
@@ -136,31 +138,30 @@
         </section>
         <section class="web"> 
             <div>
-                <h2>
+                <h2 class="typing-animation">
                     <span class="bold2">Improve</span>
                     <span class="regular4">your</span>
                     <span class="regular4">brand</span>
                     <span class="bold2">with an awesome site.</span>
                 </h2>
-                <h4>
+                <h4 class="underline-hover">
                     <span>Comprehensive</span>
                     <span class="regular5">brand</span>
                 </h4>
                 <p class="regular9">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-                <h4>
+                <h4 class="underline-hover">
                     <span>Web</span>
                     <span class="regular5">Presence</span>
                 </h4>
                 <p class="regular9">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
             </div>
-            <img src="./assets/website.png" alt="Website" class="pc">
+            <img src="./assets/website.png" alt="Website" class="pc floating-2">
             <div class="phone_div">
-                <img src="./assets/phone.png" alt="Phone" class="phone">
+                <img src="./assets/phone.png" alt="Phone" class="phone shake">
             </div>
-            
         </section>
         <section class="think_section"> 
-            <h2 class="think">
+            <h2 class="think neon-text">
                 <span class="bold">what</span>
                 <span class="regular6">they</span>
                 <span class="bold">think</span>
@@ -186,7 +187,7 @@
                 </div>
             </section>
             <div class="rectangles">
-                <div class="chosen"></div>
+                <div class="chosen pulse-dot"></div>
                 <div class="rectangle"></div>
                 <div class="rectangle"></div>
                 <div class="rectangle"></div>
@@ -195,7 +196,7 @@
         </section>
         <section class="team_skills"> 
             <div class="skills-block">
-                <h2>
+                <h2 class="glow">
                     <span>our</span>
                     <span class="regular7">team</span>
                     <span>skills</span>
@@ -204,56 +205,56 @@
                     <div>
                         <span>graphic design</span><span>80%</span>
                     </div>
-                    <hr class="design">
+                    <hr class="design animate-width">
                     <div>
                         <span>lead generation</span><span>41%</span>
                     </div>
-                    <hr class="lead">
+                    <hr class="lead animate-width">
                     <div>
                         <span>photoshop</span><span>70%</span>
                     </div>
-                    <hr class="photoshop">
+                    <hr class="photoshop animate-width">
                     <div>
                         <span>illustration</span><span>100%</span>
                     </div>
-                    <hr class="illustration">
+                    <hr class="illustration animate-width">
                     <p>* Over 8 years creating templates on Marketplace.</p>
                 </div>
             </div>
-            <img src="./assets/team.png" alt="team">
+            <img src="./assets/team.png" alt="team" class="parallax-img">
         </section>
         <section class="facts_section"> 
-            <h2>
+            <h2 class="flip-in">
                 <span class="bold3">fun</span>
                 <span class="regular8">facts</span>
             </h2>
             <div class="facts">
-                <div>
+                <div class="rainbow-hover">
                     <img src="./assets/medal.svg" alt="medal">
                     <div class="killer123">
                         <p>
-                            <span class="digit">8</span>
+                            <span class="digit counter">8</span>
                             <span class="regular9">Years on market</span>
                         </p>
                     </div>
                 </div>
-                <div>
+                <div class="rainbow-hover">
                     <img src="./assets/IMAGE.svg" alt="medal">
                     <p>
-                        <span class="digit2">110+</span>
+                        <span class="digit2 counter">110</span>
                         <span class="regular9">Projects done</span>
                     </p>
                 </div>
-                <div>
+                <div class="bot rainbow-hover">
                     <p>
-                        <span class="digit2">15</span>
+                        <span class="digit2 counter">15</span>
                         <span class="regular9">Hero's member</span>
                     </p>
                 </div>
-                <div>
+                <div class="bot rainbow-hover">
                     <img src="./assets/cup.svg" alt="medal">
                     <p>
-                        <span class="digit">100+</span>
+                        <span class="digit counter">100</span>
                         <span class="regular9">Cups of coffee</span>
                     </p>
                 </div>
@@ -261,16 +262,16 @@
         </section>
         <section class="blog_section"> 
             <div class="blog_head">
-                <h2>
+                <h2 class="slide-from-left">
                     <span class="bold">our</span>
                     <span class="regular10">blog</span>
                 </h2>
-                <button class="circle2">
+                <button class="circle2 swing">
                     view all  <br>posts
                 </button>
             </div>
             <div class="blogs">
-                <div>
+                <div class="blog-card">
                     <img src="./assets/blog_img1.png" alt="blog">
                     <button class="post_buttons">marketing</button>
                     <h3>
@@ -278,7 +279,7 @@
                     </h3>
                     <p>February 3, 2021</p>
                 </div>
-                <div>
+                <div class="blog-card">
                     <img src="./assets/blog_img2.png" alt="blog">
                     <button class="post_buttons">design</button>
                     <h3>
@@ -286,7 +287,7 @@
                     </h3>
                     <p>February 25, 2021</p>
                 </div>
-                <div>
+                <div class="blog-card">
                     <img src="./assets/blog_img3.png" alt="blog">
                     <button class="post_buttons">code</button>
                     <h3>
@@ -298,18 +299,18 @@
         </section> 
         <section class="contact">
             <div>
-                <h2>
+                <h2 class="jump-text">
                     <span class="bold4">let's</span>
                     <span class="regular11">talk</span>
                 </h2>
-                <p >Feel free to contact us</p>
+                <p class="fade-in-delay">Feel free to contact us</p>
             </div>
-            <button class="circle3">view on <br>designer</button>
+            <button class="circle3 bounce">view on <br>designer</button>
         </section>
     </main> 
     <footer> 
         <div class="social_logo">
-            <img src="./assets/roby.png" alt="roby">
+            <img src="./assets/roby.png" alt="roby" class="spin-on-hover">
             <div class="social-icons">
                 <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -324,7 +325,7 @@
                 <p>14 New South Head Rd,</p>
                 <p>Triple Bay 3148</p>
                 <p>London, UK</p>
-                <button class="map">find on map</button>
+                <button class="map pulse-on-hover">find on map</button>
             </div>
             <div class="sitemapf">
                 <h5>sitemap</h5>
